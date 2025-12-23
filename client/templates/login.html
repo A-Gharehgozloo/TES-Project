@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TES Secure Client</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background: #fff;
+            padding: 40px;
+            border: 2px solid #333;
+            width: 300px;
+            text-align: center;
+            box-shadow: 5px 5px 0px #888;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px dashed #999;
+            padding-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #999;
+            font-family: 'Courier New', monospace;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .error {
+            color: red;
+            background: #ffe6e6;
+            padding: 10px;
+            border: 1px solid red;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <h2>TES Secure Client</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="USERNAME" required>
+            <input type="password" name="password" placeholder="PASSWORD" required>
+            <button type="submit">Connect Securely</button>
+        </form>
+        <div class="status">System Ready</div>
+    </div>
+</body>
+
+</html>

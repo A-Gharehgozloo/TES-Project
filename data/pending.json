@@ -1,0 +1,42 @@
+[
+    {
+        "id": "09bfa414",
+        "timestamp": "2025-12-23 17:20:29",
+        "plate": "WEB-TEST-01",
+        "speed": 120,
+        "signature_verified": true,
+        "status": "PROCESSED"
+    },
+    {
+        "id": "3e781ad0",
+        "timestamp": "2025-12-23 17:28:20",
+        "plate": "ve337",
+        "speed": 50,
+        "signature_verified": true,
+        "status": "PENDING"
+    },
+    {
+        "id": "65cd0cd1",
+        "timestamp": "2025-12-23 17:29:45",
+        "plate": "ve334",
+        "speed": 90,
+        "signature_verified": true,
+        "status": "PROCESSED"
+    },
+    {
+        "id": "4ccff613",
+        "timestamp": "2025-12-23 17:32:33",
+        "plate": "AA123",
+        "speed": 120,
+        "signature_verified": true,
+        "status": "PENDING"
+    },
+    {
+        "id": "ec7363ef",
+        "timestamp": "2025-12-23 17:34:21",
+        "plate": "31AA34",
+        "speed": 80,
+        "signature_verified": true,
+        "status": "PROCESSED"
+    }
+]

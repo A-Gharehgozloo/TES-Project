@@ -1,0 +1,52 @@
+2025-12-23 17:18:54 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-23 17:19:22 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-23 17:19:51 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-23 17:20:27 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-23 17:20:27 - Listening on 127.0.0.1:9998
+2025-12-23 17:20:29 - Connection from ('127.0.0.1', 6586)
+2025-12-23 17:20:29 - Secure Session Established
+2025-12-23 17:20:29 - User admin logged in.
+2025-12-23 17:20:29 - Queued message for WEB-TEST-01 (Verified: True)
+2025-12-23 17:20:31 - Processed violation 09bfa414: Added 50 pts to WEB-TEST-01
+2025-12-23 17:26:38 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-23 17:26:38 - Listening on 127.0.0.1:9999
+2025-12-23 17:26:52 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-12-23 17:26:52 - [33mPress CTRL+C to quit[0m
+2025-12-23 17:26:52 -  * Restarting with stat
+2025-12-23 17:26:53 -  * Debugger is active!
+2025-12-23 17:26:53 -  * Debugger PIN: 104-226-231
+2025-12-23 17:27:22 - Connection from ('127.0.0.1', 1275)
+2025-12-23 17:27:22 - Secure Session Established
+2025-12-23 17:27:22 - User admin logged in.
+2025-12-23 17:27:46 - 127.0.0.1 - - [23/Dec/2025 17:27:46] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-23 17:27:46 - 127.0.0.1 - - [23/Dec/2025 17:27:46] "GET /login HTTP/1.1" 200 -
+2025-12-23 17:27:46 - 127.0.0.1 - - [23/Dec/2025 17:27:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-23 17:27:58 - 127.0.0.1 - - [23/Dec/2025 17:27:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-23 17:27:58 - 127.0.0.1 - - [23/Dec/2025 17:27:58] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:28:02 - 127.0.0.1 - - [23/Dec/2025 17:28:02] "GET /records HTTP/1.1" 200 -
+2025-12-23 17:28:05 - 127.0.0.1 - - [23/Dec/2025 17:28:05] "GET /status HTTP/1.1" 200 -
+2025-12-23 17:28:08 - 127.0.0.1 - - [23/Dec/2025 17:28:08] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:28:20 - Queued message for ve337 (Verified: True)
+2025-12-23 17:28:23 - 127.0.0.1 - - [23/Dec/2025 17:28:23] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:28:27 - 127.0.0.1 - - [23/Dec/2025 17:28:27] "GET /process/3e781ad0 HTTP/1.1" 200 -
+2025-12-23 17:28:31 - 127.0.0.1 - - [23/Dec/2025 17:28:31] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:29:45 - Queued message for ve334 (Verified: True)
+2025-12-23 17:29:53 - 127.0.0.1 - - [23/Dec/2025 17:29:53] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:29:57 - 127.0.0.1 - - [23/Dec/2025 17:29:57] "GET /process/65cd0cd1 HTTP/1.1" 200 -
+2025-12-23 17:29:59 - Processed violation 65cd0cd1: Added 20 pts to ve334
+2025-12-23 17:29:59 - 127.0.0.1 - - [23/Dec/2025 17:29:59] "[32mPOST /api/action HTTP/1.1[0m" 302 -
+2025-12-23 17:29:59 - 127.0.0.1 - - [23/Dec/2025 17:29:59] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:30:02 - 127.0.0.1 - - [23/Dec/2025 17:30:02] "GET /records HTTP/1.1" 200 -
+2025-12-23 17:30:09 - 127.0.0.1 - - [23/Dec/2025 17:30:09] "GET /status HTTP/1.1" 200 -
+2025-12-23 17:32:33 - Queued message for AA123 (Verified: True)
+2025-12-23 17:33:23 - 127.0.0.1 - - [23/Dec/2025 17:33:23] "GET /records HTTP/1.1" 200 -
+2025-12-23 17:33:35 - 127.0.0.1 - - [23/Dec/2025 17:33:35] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:34:21 - Queued message for 31AA34 (Verified: True)
+2025-12-23 17:34:41 - 127.0.0.1 - - [23/Dec/2025 17:34:41] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:35:04 - 127.0.0.1 - - [23/Dec/2025 17:35:04] "GET /process/ec7363ef HTTP/1.1" 200 -
+2025-12-23 17:35:09 - Processed violation ec7363ef: Added 20 pts to 31AA34
+2025-12-23 17:35:09 - 127.0.0.1 - - [23/Dec/2025 17:35:09] "[32mPOST /api/action HTTP/1.1[0m" 302 -
+2025-12-23 17:35:09 - 127.0.0.1 - - [23/Dec/2025 17:35:09] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 17:35:11 - 127.0.0.1 - - [23/Dec/2025 17:35:11] "GET /records HTTP/1.1" 200 -
+2025-12-23 17:35:18 - 127.0.0.1 - - [23/Dec/2025 17:35:18] "GET /status HTTP/1.1" 200 -

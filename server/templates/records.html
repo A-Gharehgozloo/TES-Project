@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Driver Records</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            border-bottom: 1px solid #34495e;
+            padding-bottom: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #bdc3c7;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f8f9fa;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .lock-icon {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>TES Officer</h2>
+        <a href="/dashboard">Incoming Violations</a>
+        <a href="/records" class="active">Driver Records</a>
+        <a href="/status">System Status</a>
+    </div>
+    <div class="content">
+        <h1>Encrypted Driver Database</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plate Number</th>
+                    <th>Total Penalty Points</th>
+                    <th>Encryption</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for plate, pts in records.items() %}
+                <tr>
+                    <td>{{ plate }}</td>
+                    <td><b>{{ pts }}</b></td>
+                    <td><span class="lock-icon">&#128274;</span> DES-Encrypted</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="3">No records found.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TES Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            border-bottom: 1px solid #34495e;
+            padding-bottom: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #bdc3c7;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f8f9fa;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        .bg-green {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .bg-red {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>TES Officer</h2>
+        <a href="/dashboard" class="active">Incoming Violations</a>
+        <a href="/records">Driver Records</a>
+        <a href="/status">System Status</a>
+    </div>
+    <div class="content">
+        <h1>Incoming Traffic Violations</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Plate</th>
+                    <th>Speed</th>
+                    <th>Signature</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for msg in messages %}
+                <tr>
+                    <td>{{ msg.timestamp }}</td>
+                    <td>{{ msg.plate }}</td>
+                    <td>{{ msg.speed }} km/h</td>
+                    <td>
+                        {% if msg.signature_verified %}
+                        <span class="badge bg-green">Verified</span>
+                        {% else %}
+                        <span class="badge bg-red">Invalid</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ msg.status }}</td>
+                    <td><a href="/process/{{ msg.id }}" class="btn">Process</a></td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="6" style="text-align:center; color:#999;">No pending violations</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
