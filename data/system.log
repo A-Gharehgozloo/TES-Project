@@ -50,3 +50,20 @@
 2025-12-23 17:35:09 - 127.0.0.1 - - [23/Dec/2025 17:35:09] "GET /dashboard HTTP/1.1" 200 -
 2025-12-23 17:35:11 - 127.0.0.1 - - [23/Dec/2025 17:35:11] "GET /records HTTP/1.1" 200 -
 2025-12-23 17:35:18 - 127.0.0.1 - - [23/Dec/2025 17:35:18] "GET /status HTTP/1.1" 200 -
+2025-12-23 17:47:03 -  * Detected change in 'C:\\Users\\Aligh\\Desktop\\git-security\\Security-project\\server\\traffic_officer.py', reloading
+2025-12-23 17:47:03 - Connection Error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-12-23 17:47:03 -  * Restarting with stat
+2025-12-23 17:47:05 -  * Debugger is active!
+2025-12-23 17:47:05 -  * Debugger PIN: 104-226-231
+2025-12-23 17:47:07 -  * Detected change in 'C:\\Users\\Aligh\\Desktop\\git-security\\Security-project\\server\\web_app.py', reloading
+2025-12-23 17:47:07 -  * Restarting with stat
+2025-12-23 17:47:08 -  * Debugger is active!
+2025-12-23 17:47:09 -  * Debugger PIN: 104-226-231
+2025-12-23 17:47:26 -  * Detected change in 'C:\\Users\\Aligh\\Desktop\\git-security\\Security-project\\client\\web_app.py', reloading
+2025-12-23 17:47:26 -  * Restarting with stat
+2025-12-23 17:47:27 -  * Debugger is active!
+2025-12-23 17:47:27 -  * Debugger PIN: 104-226-231
+2025-12-23 17:47:28 -  * Detected change in 'C:\\Users\\Aligh\\Desktop\\git-security\\Security-project\\client\\web_app.py', reloading
+2025-12-23 17:47:28 -  * Restarting with stat
+2025-12-23 17:47:30 -  * Debugger is active!
+2025-12-23 17:47:31 -  * Debugger PIN: 104-226-231

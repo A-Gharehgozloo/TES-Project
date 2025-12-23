@@ -33,12 +33,21 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    global client_instance, is_connected
+    
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        server_ip = request.form.get('server_ip', '127.0.0.1') # Get IP from form
+        
+        # Re-initialize client if IP changed or not connected
+        if not is_connected or client_instance.server_host != server_ip:
+             print(f"Connecting to {server_ip}...")
+             client_instance = TrafficPoliceClient(server_host=server_ip)
+             is_connected = False # Reset status
         
         if not ensure_connection():
-            flash("Could not connect to Server.")
+            flash(f"Could not connect to Server at {server_ip}")
             return render_template('login.html', error="Server Unavailable")
 
         # Perform Secure Login via Socket
@@ -80,4 +89,4 @@ def observation():
 
 if __name__ == '__main__':
     print("Starting Police Client Web App on port 5000...")
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
