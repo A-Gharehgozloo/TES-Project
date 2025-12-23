@@ -8,7 +8,10 @@ class TrafficPoliceClient:
     HOST = '127.0.0.1'
     PORT = 9999
 
-    def __init__(self):
+    def __init__(self, server_host=None):
+        HOST = '127.0.0.1'
+        self.server_host = server_host if server_host else HOST
+        
         # Generate Client RSA Keys
         self.private_key, self.public_key = RSAManager.generate_keys()
         self.rsa_manager = RSAManager(private_key_data=self.private_key, public_key_data=self.public_key)
@@ -19,8 +22,8 @@ class TrafficPoliceClient:
 
     def connect(self):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.socket.connect((self.HOST, self.PORT))
-        print(f"[CLIENT] Connected to {self.HOST}:{self.PORT}")
+        self.socket.connect((self.server_host, self.PORT))
+        print(f"[CLIENT] Connected to {self.server_host}:{self.PORT}")
 
         # 1. Receive Handshake (Server Public Key)
         data = self.socket.recv(4096)
