@@ -151,3 +151,4 @@
 2025-12-27 16:38:43 - 127.0.0.1 - - [27/Dec/2025 16:38:43] "[32mPOST /login HTTP/1.1[0m" 302 -
 2025-12-27 16:38:44 - 127.0.0.1 - - [27/Dec/2025 16:38:44] "GET /dashboard HTTP/1.1" 200 -
 2025-12-27 16:41:07 - 127.0.0.1 - - [27/Dec/2025 16:41:07] "GET /records HTTP/1.1" 200 -
+2025-12-27 17:19:00 - Connection Error: [WinError 10054] An existing connection was forcibly closed by the remote host
