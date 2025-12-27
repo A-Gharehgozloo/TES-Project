@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual Environments
+venv/
+env/
+.env
+.venv
+
+# IDEs
+.vscode/
+.idea/
+
+# TES Specific data (optional, but good to ignore dynamic data if strictly production)
+# data/pending.json
+# data/drivers.enc
