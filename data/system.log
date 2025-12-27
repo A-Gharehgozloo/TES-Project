@@ -71,3 +71,83 @@
 2025-12-23 17:52:30 -  * Restarting with stat
 2025-12-23 17:52:31 -  * Debugger is active!
 2025-12-23 17:52:31 -  * Debugger PIN: 104-226-231
+2025-12-23 18:03:33 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-23 18:03:33 - Listening on 0.0.0.0:9999
+2025-12-23 18:03:52 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.254.62:5001
+2025-12-23 18:03:52 - [33mPress CTRL+C to quit[0m
+2025-12-23 18:03:52 -  * Restarting with stat
+2025-12-23 18:03:53 -  * Debugger is active!
+2025-12-23 18:03:53 -  * Debugger PIN: 104-226-231
+2025-12-23 18:04:27 - 127.0.0.1 - - [23/Dec/2025 18:04:27] "GET /status HTTP/1.1" 200 -
+2025-12-23 18:04:27 - 127.0.0.1 - - [23/Dec/2025 18:04:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-23 18:04:28 - 127.0.0.1 - - [23/Dec/2025 18:04:28] "GET /status HTTP/1.1" 200 -
+2025-12-23 18:04:33 - 127.0.0.1 - - [23/Dec/2025 18:04:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-23 18:04:33 - 127.0.0.1 - - [23/Dec/2025 18:04:33] "GET /login HTTP/1.1" 200 -
+2025-12-23 18:04:41 - 127.0.0.1 - - [23/Dec/2025 18:04:41] "POST /login HTTP/1.1" 200 -
+2025-12-23 18:04:50 - 127.0.0.1 - - [23/Dec/2025 18:04:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-23 18:04:50 - 127.0.0.1 - - [23/Dec/2025 18:04:50] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 18:09:05 - Connection from ('192.168.254.229', 50471)
+2025-12-23 18:09:05 - Secure Session Established
+2025-12-23 18:09:05 - User admin logged in.
+2025-12-23 18:09:28 - Queued message for DD44 (Verified: True)
+2025-12-23 18:09:33 - 127.0.0.1 - - [23/Dec/2025 18:09:33] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 18:09:39 - 127.0.0.1 - - [23/Dec/2025 18:09:39] "GET /process/5fb2b3e7 HTTP/1.1" 200 -
+2025-12-23 18:09:41 - Processed violation 5fb2b3e7: Added 20 pts to DD44
+2025-12-23 18:09:41 - 127.0.0.1 - - [23/Dec/2025 18:09:41] "[32mPOST /api/action HTTP/1.1[0m" 302 -
+2025-12-23 18:09:41 - 127.0.0.1 - - [23/Dec/2025 18:09:41] "GET /dashboard HTTP/1.1" 200 -
+2025-12-23 18:09:43 - 127.0.0.1 - - [23/Dec/2025 18:09:43] "GET /records HTTP/1.1" 200 -
+2025-12-27 15:48:23 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-27 15:48:23 - Listening on 0.0.0.0:9999
+2025-12-27 15:48:24 - Connection from ('127.0.0.1', 6860)
+2025-12-27 15:48:24 - Secure Session Established
+2025-12-27 15:48:24 - Failed login attempt for admin
+2025-12-27 15:48:24 - User admin logged in.
+2025-12-27 15:48:24 - Queued message for TEST-001 (Verified: True)
+2025-12-27 16:31:42 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-27 16:31:42 - Listening on 0.0.0.0:9999
+2025-12-27 16:31:45 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.101:5001
+2025-12-27 16:31:45 - [33mPress CTRL+C to quit[0m
+2025-12-27 16:31:45 -  * Restarting with stat
+2025-12-27 16:31:46 -  * Debugger is active!
+2025-12-27 16:31:46 -  * Debugger PIN: 342-840-083
+2025-12-27 16:32:03 - 127.0.0.1 - - [27/Dec/2025 16:32:03] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-27 16:32:03 - 127.0.0.1 - - [27/Dec/2025 16:32:03] "GET /login HTTP/1.1" 200 -
+2025-12-27 16:32:03 - 127.0.0.1 - - [27/Dec/2025 16:32:03] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-27 16:32:03 - 127.0.0.1 - - [27/Dec/2025 16:32:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-27 16:32:03 - 127.0.0.1 - - [27/Dec/2025 16:32:03] "GET /login HTTP/1.1" 200 -
+2025-12-27 16:32:55 - 127.0.0.1 - - [27/Dec/2025 16:32:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-27 16:32:55 - 127.0.0.1 - - [27/Dec/2025 16:32:55] "GET /dashboard HTTP/1.1" 200 -
+2025-12-27 16:33:06 - Connection from ('127.0.0.1', 1682)
+2025-12-27 16:33:06 - Secure Session Established
+2025-12-27 16:33:06 - User admin logged in.
+2025-12-27 16:33:11 - 127.0.0.1 - - [27/Dec/2025 16:33:11] "GET /status HTTP/1.1" 200 -
+2025-12-27 16:34:05 - Connection Error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-12-27 16:34:40 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.101:5001
+2025-12-27 16:34:40 - [33mPress CTRL+C to quit[0m
+2025-12-27 16:34:40 -  * Restarting with stat
+2025-12-27 16:34:40 -  * Debugger is active!
+2025-12-27 16:34:40 -  * Debugger PIN: 103-861-567
+2025-12-27 16:35:03 - Server Initialized (Socket: 9999). RSA Keys Generated.
+2025-12-27 16:35:03 - Listening on 0.0.0.0:9999
+2025-12-27 16:36:02 - Connection from ('127.0.0.1', 8827)
+2025-12-27 16:36:02 - Invalid JSON received
+2025-12-27 16:36:02 - Connection from ('127.0.0.1', 8829)
+2025-12-27 16:36:02 - Invalid JSON received
+2025-12-27 16:36:27 - 127.0.0.1 - - [27/Dec/2025 16:36:27] "GET /status HTTP/1.1" 200 -
+2025-12-27 16:36:31 - 127.0.0.1 - - [27/Dec/2025 16:36:31] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-27 16:36:31 - 127.0.0.1 - - [27/Dec/2025 16:36:31] "GET /login HTTP/1.1" 200 -
+2025-12-27 16:37:02 - Connection from ('127.0.0.1', 8658)
+2025-12-27 16:37:02 - Secure Session Established
+2025-12-27 16:37:02 - User admin logged in.
+2025-12-27 16:38:43 - 127.0.0.1 - - [27/Dec/2025 16:38:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-27 16:38:44 - 127.0.0.1 - - [27/Dec/2025 16:38:44] "GET /dashboard HTTP/1.1" 200 -
+2025-12-27 16:41:07 - 127.0.0.1 - - [27/Dec/2025 16:41:07] "GET /records HTTP/1.1" 200 -

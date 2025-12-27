@@ -38,5 +38,21 @@
         "speed": 80,
         "signature_verified": true,
         "status": "PROCESSED"
+    },
+    {
+        "id": "5fb2b3e7",
+        "timestamp": "2025-12-23 18:09:28",
+        "plate": "DD44",
+        "speed": 70,
+        "signature_verified": true,
+        "status": "PROCESSED"
+    },
+    {
+        "id": "b006f7bf",
+        "timestamp": "2025-12-27 15:48:24",
+        "plate": "TEST-001",
+        "speed": 120,
+        "signature_verified": true,
+        "status": "PENDING"
     }
 ]
